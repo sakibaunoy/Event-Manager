@@ -3,7 +3,7 @@ import hashlib
 import os
 import secrets
 from functools import wraps
-from flask import Flask, request, jsonify, send_from_directory, session
+from flask import Flask, request, jsonify, send_from_directory, session  # pyright: ignore[reportMissingImports]
 
 app = Flask(__name__, static_folder="static", static_url_path="/static")
 app.secret_key = os.environ.get("SECRET_KEY", secrets.token_hex(32))
