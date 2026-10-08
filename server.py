@@ -420,3 +420,4 @@ def export_bookings():
 if __name__ == "__main__":
     init_db()
     app.run(host="0.0.0.0", debug=False, port=9000)
+print("gone case")
